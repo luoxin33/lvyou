@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.bishe.me">
+  <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+  <application
+    android:allowBackup="true"
+    android:icon="@drawable/ic_yunnan"
+    android:label="@string/app_name"
+    android:name=".MyApplication"
+    android:theme="@style/AppTheme">
+
+    <!-- 声明service组件 -->
+    <activity
+      android:label="@string/app_name"
+      android:name=".activity.MainActivity"
+      android:launchMode="singleTask"
+      android:screenOrientation="portrait"
+      android:theme="@style/StaticImageTranslucentTheme"
+      android:windowSoftInputMode="stateVisible|adjustResize" />
+    <!-- AK鉴权 -->
+    <!-- http://lbsyun.baidu.com/apiconsole/key -->
+
+    <activity
+      android:name=".user.RegisterActivity"
+      android:windowSoftInputMode="stateHidden" />
+
+    <activity
+      android:name=".activity.OrderManagerActivity"
+      android:launchMode="singleTask"
+      android:screenOrientation="portrait"
+      android:theme="@style/StaticImageTranslucentTheme"
+      android:windowSoftInputMode="stateHidden" />
+
+    <activity
+      android:name=".activity.RaiderCheckActivity"
+      android:launchMode="singleTask"
+      android:screenOrientation="portrait"
+      android:theme="@style/StaticImageTranslucentTheme"
+      android:windowSoftInputMode="stateHidden" />
+
+    <activity
+      android:name=".activity.RaiderActivity"
+      android:launchMode="singleTask"
+      android:screenOrientation="portrait"
+      android:theme="@style/StaticImageTranslucentTheme"
+      android:windowSoftInputMode="stateHidden" />
+
+    <activity
+      android:name=".activity.OrderActivity"
+      android:launchMode="singleTask"
+      android:screenOrientation="portrait"
+      android:theme="@style/StaticImageTranslucentTheme"
+      android:windowSoftInputMode="stateHidden" />
+    <activity
+      android:name=".activity.AttractionActivity"
+      android:launchMode="singleTask"
+      android:screenOrientation="portrait"
+      android:theme="@style/StaticImageTranslucentTheme"
+      android:windowSoftInputMode="stateHidden" />
+
+    <activity
+      android:name=".user.LoginActivity"
+      android:launchMode="singleTask"
+      android:screenOrientation="portrait"
+      android:theme="@style/StaticImageTranslucentTheme"
+      android:windowSoftInputMode="stateHidden" />
+
+    <activity
+      android:label="@string/app_name"
+      android:name=".activity.GuideActivity"
+      android:launchMode="singleTask"
+      android:screenOrientation="portrait"
+      android:theme="@style/StaticImageTranslucentTheme"
+      android:windowSoftInputMode="stateHidden" >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity android:name=".user.ModifyPasswordActivity" />
+    <meta-data
+      android:name="com.baidu.lbsapi.API_KEY"
+      android:value="RBelOe6LvkGPkLLyDDFPdmy0g6x39oCl" />
+    <service
+      android:enabled="true"
+      android:name="com.baidu.location.f"
+      android:process=":remote" />
+  </application>
+
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <!-- 这个权限用于进行网络定位-->
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <!-- 这个权限用于访问GPS定位-->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <!-- 访问网络，网络定位需要上网 -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <!-- 允许挂载和反挂载文件系统可移动存储 -->
+
+  <!-- 允许访问振动设备 -->
+  <uses-permission android:name="android.permission.INTERNET" />
+  <!-- 允许使用PowerManager的 WakeLocks保持进程在休眠时从屏幕消失 -->
+  <uses-permission android:name="android.permission.VIBRATE" />
+
+  <!-- android 9.0上使用前台服务，需要添加权限 -->
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <!-- 用于读取手机当前的状态 -->
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <!-- 读取缓存数据 -->
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

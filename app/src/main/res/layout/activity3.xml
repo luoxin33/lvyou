@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.zhy.weixin6.ui"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <views.TitleView
+        android:id="@+id/t"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        />
+  
+  
+  
+  <ScrollView 
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      
+      >
+  <LinearLayout
+    
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      
+      >
+     <LinearLayout
+     android:id="@+id/l333"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      
+      >
+    
+      
+  </LinearLayout>
+       <EditText
+           android:layout_marginTop="10dp"
+      android:id="@+id/editText1"
+      android:layout_width="300dp"
+       android:layout_gravity="center"
+      android:layout_height="100dp"
+       android:background="@color/color_dede"
+       android:hint="请输入标题"
+      android:ems="20" >
+
+      <requestFocus />
+      
+        </EditText>
+      
+       <EditText
+            android:hint="请输入内容"
+      android:id="@+id/editText2"
+      android:layout_width="300dp"
+      android:layout_height="200dp"
+      android:layout_marginTop="20dp"
+       android:layout_gravity="center"
+      android:background="@color/color_dede"
+      android:ems="300" >
+
+      <requestFocus />
+  </EditText>
+  
+       
+       <ImageView
+             android:layout_marginTop="20dp"
+      android:id="@+id/imageView1"
+      android:layout_width="300dp"
+      android:layout_height="200dp"
+      android:scaleType="fitXY"
+      android:layout_gravity="center"
+      android:src="@color/color_dede" />
+       
+  
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="提交信息" />
+  </LinearLayout>
+  
+   </ScrollView>
+
+ 
+
+</LinearLayout>

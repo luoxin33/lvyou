@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">云旅游</string>
+    <string name="action_feed">意见反馈</string>
+    <string name="action_group_chat">发起群聊</string>
+    <string name="action_add_friend">添加朋友</string>
+    <string name="action_scan">扫一扫</string>
+    <string name="action_search">搜索</string>
+    <string name="action_add">添加</string>
+    <string name="tab_attractions">景点推荐</string>
+    <string name="tab_raiders">攻略</string>
+    <string name="tab_order">订单</string>
+  <string name="tab_me">我的</string>
+
+    <string name="bomb">ea90a91121076de0eecd9b1a0c632e65</string>
+  <string name="txt_remind_phone">请输入用户名</string>
+    <string name="txt_remind_pwd">请输入密码</string>
+    <string name="txt_login">登录</string>
+  <string name="login">登陆</string>
+  <string name="input_tel_num">请输入用户名</string>
+  <string name="input_psd">账户</string>
+  <string name="pls_input_psd">请输入账户名</string>
+  <string name="confirm_psd">密码</string>
+  <string name="pls_confirm_psd">请再次输入新密码</string>
+  <string name="set_psd">输入密码</string>
+  <string name="reset_psd">确认密码</string>
+  <string name="origin_psd">原始密码</string>
+  <string name="pls_origin_psd">请输入旧密码</string>
+  <string name="pls_new_psd">请输入新密码</string>
+  <string name="pls_input_title">请输入攻略标题</string>
+  <string name="raider_title">攻略标题</string>
+  <string name="pls_input_raider_content">攻略内容</string>
+  <string name="raider_content">攻略内容</string>
+  <string name="raider_status">攻略状态</string>
+</resources>

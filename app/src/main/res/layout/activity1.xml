@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.zhy.weixin6.ui"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <views.TitleView
+        android:id="@+id/t"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        />
+  
+ <LinearLayout
+      android:id="@+id/tou111"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:background="@color/color_dede"
+          android:orientation="horizontal" >
+
+     <EditText
+         android:id="@+id/editText1"
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent"
+         android:layout_weight="1"
+         android:background="@color/white"
+         android:hint=""
+         android:ems="10" >
+
+         <requestFocus />
+     </EditText>
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent"
+         android:layout_weight="1"
+         android:textColor="@color/white"
+         android:background="@color/blue"
+         android:text="" />
+     
+      </LinearLayout>
+  
+  <ScrollView 
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      
+      >
+  <LinearLayout
+    
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      
+      >
+     <LinearLayout
+     android:id="@+id/l333"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      
+      >
+    
+      
+  </LinearLayout>
+       <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_dede"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="没有更多了" />
+  </LinearLayout>
+  
+   </ScrollView>
+
+  
+
+</LinearLayout>

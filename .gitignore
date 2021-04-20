@@ -1,0 +1,9 @@
+/lvyou.iml
+/import-summary.txt
+/gradlew.bat
+/gradlew
+
+# Project exclude paths
+/.gradle/
+/app/build/
+/app/build/intermediates/javac/debug/classes/

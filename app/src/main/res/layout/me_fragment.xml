@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+        <RelativeLayout
+          android:id="@+id/rl_person_info"
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          android:background="@color/white"
+          android:layout_marginBottom="@dimen/activity_vertical_margin"
+          android:paddingLeft="@dimen/activity_vertical_margin"
+          android:paddingRight="@dimen/activity_vertical_margin">
+
+            <com.bishe.me.view.RoundImageView
+              android:id="@+id/iv_person_info"
+              android:layout_width="66dp"
+              android:layout_height="66dp"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+              android:src="@drawable/head_pic" />
+
+            <LinearLayout
+              android:layout_marginLeft="@dimen/activity_vertical_margin"
+              android:layout_toRightOf="@id/iv_person_info"
+              android:orientation="vertical"
+              android:layout_centerVertical="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+                <TextView
+                  android:id="@+id/tv_login_state"
+                  style="@style/textBig"
+                  android:textSize="18sp"
+                  android:textColor="#555555"
+                  android:text="请登录" />
+
+                <TextView
+                  android:id="@+id/tv_user_name"
+                  android:textSize="18sp"
+                  android:textColor="#222222"
+                  android:text="--"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+                <TextView
+                  android:id="@+id/tv_tel"
+                  android:textSize="16sp"
+                  android:textColor="#888888"
+                  android:text=""
+                  android:layout_marginTop="8dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View style="@style/std_split"/>
+
+        <RelativeLayout
+          android:id="@+id/rl_order_manager"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:paddingTop="@dimen/activity_vertical_margin"
+          android:paddingBottom="@dimen/activity_vertical_margin"
+          android:paddingLeft="@dimen/activity_vertical_margin"
+          android:paddingRight="@dimen/activity_vertical_margin">
+            <TextView
+              style="@style/std_txt_title2"
+              android:layout_gravity="center_vertical"
+              android:text="订单管理"/>
+
+            <ImageView
+              style="@style/imageView24"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:src="@drawable/to_right" />
+        </RelativeLayout>
+
+        <View style="@style/std_split"/>
+
+        <RelativeLayout
+          android:id="@+id/rl_raider_check"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:paddingTop="@dimen/activity_vertical_margin"
+          android:paddingBottom="@dimen/activity_vertical_margin"
+          android:paddingLeft="@dimen/activity_vertical_margin"
+          android:paddingRight="@dimen/activity_vertical_margin">
+            <TextView
+              style="@style/std_txt_title2"
+              android:layout_gravity="center_vertical"
+              android:text="攻略审核"/>
+
+            <ImageView
+              style="@style/imageView24"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:src="@drawable/to_right" />
+        </RelativeLayout>
+
+        <View style="@style/std_split"/>
+
+        <RelativeLayout
+          android:id="@+id/rl_modify_password"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:paddingTop="@dimen/activity_vertical_margin"
+          android:paddingBottom="@dimen/activity_vertical_margin"
+          android:paddingLeft="@dimen/activity_vertical_margin"
+          android:paddingRight="@dimen/activity_vertical_margin">
+            <TextView
+              style="@style/std_txt_title2"
+              android:layout_gravity="center_vertical"
+              android:text="修改密码"/>
+
+            <ImageView
+              style="@style/imageView24"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:src="@drawable/to_right" />
+        </RelativeLayout>
+
+        <View style="@style/std_split"/>
+
+        <RelativeLayout
+          android:id="@+id/rl_checkupdate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:paddingTop="@dimen/activity_vertical_margin"
+          android:paddingBottom="@dimen/activity_vertical_margin"
+          android:paddingLeft="@dimen/activity_vertical_margin"
+          android:paddingRight="@dimen/activity_vertical_margin">
+
+            <TextView android:id="@+id/tv_check_update_label"
+              style="@style/std_txt_title2"
+              android:layout_gravity="center_vertical"
+              android:text="检查更新"/>
+            <TextView
+              android:id="@+id/tv_version"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_gravity="center_vertical"
+              android:layout_marginLeft="10dp"
+              android:layout_toRightOf="@id/tv_check_update_label"
+              android:background="@drawable/version_bg"
+              android:textColor="@color/white"
+              android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <View style="@style/std_split"/>
+
+        <RelativeLayout
+          android:id="@+id/rl_about"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:paddingTop="@dimen/activity_vertical_margin"
+          android:paddingBottom="@dimen/activity_vertical_margin"
+          android:paddingLeft="@dimen/activity_vertical_margin"
+          android:paddingRight="@dimen/activity_vertical_margin">
+            <TextView
+              style="@style/std_txt_title2"
+              android:layout_gravity="center_vertical"
+              android:text="关于"/>
+
+            <ImageView
+              style="@style/imageView24"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:src="@drawable/to_right" />
+        </RelativeLayout>
+
+        <View style="@style/std_split"/>
+    </LinearLayout>
+
+    <Button
+      android:id="@+id/btn_login_out"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:background="@drawable/buttonbule"
+      android:textColor="@color/white"
+      android:text="退  出"/>
+
+</LinearLayout>

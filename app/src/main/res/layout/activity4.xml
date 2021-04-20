@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.zhy.weixin6.ui"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <views.TitleView
+        android:id="@+id/t"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        />
+  
+  
+  
+  <ScrollView 
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      
+      >
+  <LinearLayout
+    
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      
+      >
+     <LinearLayout
+     android:id="@+id/l333"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      
+      >
+    
+      
+  </LinearLayout>
+       <EditText
+      android:id="@+id/editText1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="10" >
+
+      <requestFocus />
+  </EditText>
+  
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="提交报修信息" />
+  </LinearLayout>
+  
+   </ScrollView>
+
+ 
+
+</LinearLayout>

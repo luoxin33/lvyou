@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/white"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:id="@+id/l333"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:gravity="center"
+      android:layout_height="0dp"
+      android:layout_weight="2">
+      <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_yunnan"/>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="3"
+      android:orientation="vertical">
+      <LinearLayout
+        style="@style/tv_et_item">
+
+        <TextView
+          style="@style/tv_et_item_label"
+          android:layout_marginRight="16dp"
+          android:layout_marginEnd="16dp"
+          android:text="@string/input_psd"/>
+
+        <EditText style="@style/tv_et_item_content"
+          android:id="@+id/et_username"
+          android:hint="@string/pls_input_psd"/>
+      </LinearLayout>
+
+      <View style="@style/std_split"/>
+
+      <LinearLayout
+        style="@style/tv_et_item">
+
+        <TextView
+          style="@style/tv_et_item_label"
+          android:layout_marginRight="16dp"
+          android:layout_marginEnd="16dp"
+          android:text="@string/confirm_psd"/>
+
+        <EditText style="@style/tv_et_item_content"
+          android:id="@+id/et_password"
+          android:inputType="textPassword"
+          android:hint="@string/pls_confirm_psd"/>
+      </LinearLayout>
+
+      <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonbule"
+        android:text="登录"
+        android:textColor="@color/white" />
+
+      <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonbule"
+        android:onClick="zhuce"
+        android:text="注册"
+        android:textColor="@color/white" />
+    </LinearLayout>
+    </LinearLayout>
+
+  <views.TitleView
+    android:id="@+id/t"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+</LinearLayout>

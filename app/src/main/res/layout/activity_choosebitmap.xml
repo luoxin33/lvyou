@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.zhy.weixin6.ui"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical" >
+  <views.TitleView
+        android:id="@+id/t"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        />
+
+  <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="300dp"
+      android:layout_height="200dp"
+      android:layout_gravity="center"
+      android:src="@color/color_dede" />
+
+  <Button
+      android:id="@+id/button1"
+      android:layout_marginTop="30dp"
+      android:onClick="pai"
+      android:textColor="@color/white"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/buttonbule"
+      android:text="拍照" />
+
+  <Button
+      android:id="@+id/button2"
+       android:onClick="xuan"
+       android:textColor="@color/white"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+       android:layout_marginTop="30dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/buttonbule"
+      android:text="从相册选择" />
+  
+  
+   <Button
+      android:id="@+id/button3"
+       android:onClick="chuan"
+       android:textColor="@color/white"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+       android:layout_marginTop="30dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/buttonbule"
+      android:text="上传" />
+  
+
+</LinearLayout>

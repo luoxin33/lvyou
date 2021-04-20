@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.zhy.weixin6.ui"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <views.TitleView
+        android:id="@+id/t"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        />
+ 
+
+  
+<ScrollView 
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+    >
+  
+  <LinearLayout
+     android:id="@+id/l33314"
+     android:background="@drawable/bookbg"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      
+      >
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Large Text"
+          android:gravity="center"
+          android:layout_marginTop="20dp"
+          
+          android:textAppearance="?android:attr/textAppearanceLarge" />
+
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+          android:text="Large Text"
+          android:gravity="center"
+          />
+       <ImageView 
+            android:id="@+id/img11"
+          android:layout_width="300dp"
+         android:layout_height="200dp"
+          android:layout_marginTop="20dp"
+          android:scaleType="fitXY"
+          android:layout_gravity="center_horizontal"
+          
+          />
+     
+
+      <TextView
+          android:id="@+id/textView3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+          android:gravity="center"
+          android:text="Large Text"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+      
+      
+      
+      
+      
+      <LinearLayout
+     android:id="@+id/l3334"
+     android:background="@drawable/bookbg"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+      
+      >
+       
+        </LinearLayout>
+       <LinearLayout
+      android:id="@+id/tou111"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:background="@color/color_dede"
+          android:orientation="horizontal" >
+
+     <EditText
+         android:id="@+id/editText1"
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent"
+         android:layout_weight="1"
+         android:background="@color/white"
+         android:hint="请输入留言"
+         android:ems="10" >
+
+         <requestFocus />
+     </EditText>
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent"
+         android:layout_weight="1"
+         android:textColor="@color/white"
+         android:background="@color/blue"
+         android:text="发送" />
+     
+      </LinearLayout>
+       
+  </LinearLayout>
+  
+  
+  
+  </ScrollView>
+  
+
+
+</LinearLayout>

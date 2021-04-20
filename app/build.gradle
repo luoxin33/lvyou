@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply from: 'version.gradle'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.bishe.me"
+        minSdkVersion 15
+        targetSdkVersion 26
+
+        versionCode = appVersionCode
+        versionName = appVersionName
+    }
+    signingConfigs {
+        release {
+            keyAlias 'luyou.keystore'
+            keyPassword "123456"
+            storeFile file('luyou.keystore')
+            storePassword '123456'
+        }
+        debug {
+            storeFile file('luyou.keystore')
+            storePassword "123456"
+            keyAlias "luyou.keystore"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+//    implementation files('libs/BmobSDK_3.5.3_20161116.jar')
+//    implementation files('libs/glide-3.6.1.jar')
+//    implementation files('libs/okhttp-3.3.1.jar')
+//    implementation files('libs/okio-1.7.0.jar')
+//    implementation files('libs/org.apache.http.legacy.jar')
+//    implementation files('libs/rxandroid-1.2.0.jar')
+//    implementation files('libs/rxjava-1.1.6.jar')
+    implementation fileTree(include: '*.jar', dir: 'libs')
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'org.litepal.android:core:2.0.0'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    /* butterknife */
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation files('libs/BaiduLBS_Android.jar')
+    //图片轮播框架
+    implementation 'com.youth.banner:banner:1.4.10'
+}

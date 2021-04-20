@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:zhy="http://schemas.android.com/apk/res-auto"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:focusable="true"
+  android:focusableInTouchMode="false"
+  android:fitsSystemWindows="true"
+  android:background="@color/theme_color_press"
+  android:orientation="vertical">
+
+    <include layout="@layout/page_title"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+      android:background="@color/white"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tabbg"
+        android:orientation="horizontal" >
+
+        <com.bishe.me.util.ChangeColorIconWithTextView
+            android:id="@+id/id_attractions"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:icon="@drawable/ic_menu_start_conversation"
+            zhy:text="首页"
+            zhy:text_size="12sp" />
+
+        <com.bishe.me.util.ChangeColorIconWithTextView
+            android:id="@+id/id_raiders"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:icon="@drawable/ic_menu_emoticons"
+            zhy:text="@string/tab_raiders"
+            zhy:text_size="12sp" />
+
+        <com.bishe.me.util.ChangeColorIconWithTextView
+            android:id="@+id/id_order"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:icon="@drawable/ic_menu_myplaces"
+            zhy:text="@string/tab_order"
+            zhy:text_size="12sp" />
+
+        <com.bishe.me.util.ChangeColorIconWithTextView
+            android:id="@+id/id_me"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:icon="@drawable/ic_menu_allfriends"
+            zhy:text="@string/tab_me"
+            zhy:text_size="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

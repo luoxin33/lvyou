@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="lvyou" />
+
+    <version value="1" />
+
+    <list>
+        <mapping class="com.bishe.me.bean.User"></mapping>
+        <mapping class="com.bishe.me.bean.Raider"></mapping>
+        <mapping class="com.bishe.me.bean.Attraction"></mapping>
+        <mapping class="com.bishe.me.bean.Bill"></mapping>
+    </list>
+</litepal>
